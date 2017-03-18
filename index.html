@@ -5,22 +5,28 @@
          <link rel="stylesheet" href="main.css">
 
     </head>
-    <body>
-        
-        <h1>Text Editor</h1>
-        <ul>
-            <ol>On pressing enter demonstrate new line</ol>
-            <ol>USer can drag and drop passages to rearrange order</ol>
-            <ol>Tooltip init</ol>
-            <ol>Add functionality to get make links and add the links at the bottom</ol>
-            
-        </ul>
-        
+    <body onload="designModeOn()">
+
         <div class="container">
-        <textarea name="storyArea" id="stuff" style=" height:600px; width:1200px;">
-            
-        </textarea>
+          <div class="row">
+            <div class="col s12 m4"><div class="title"><h1>TEXT EDITOR</h1></div></div>
+            <div class="col s12 m8 box">
+
+                <div class="btn box1"><center><h2>B</h2></center></div>
+                <div class="btn box2"><center><h2>U</h2></center></div>
+                <div class="btn box3"><center><h2>R</h2></center></div>
+
+            </div>
+          </div>
+          <div class="row">
+              <div class="col s12 m6">
+                <textarea   name="storyArea" placeholder="Write your story.." id="storyArea" style=" height:500px; width:1300px;">
+
+                </textarea>
+              </div>
+          </div>
         </div>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
         <script src="factory.js" type="text/javascript"></script>
