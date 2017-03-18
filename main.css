@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Abel');
 
 h1{
   font-family: 'Oswald', sans-serif;
@@ -12,12 +13,13 @@ h1{
     resize: none;
     border-style: none;
     border-color: Transparent;
-    overflow: auto;
+    overflow:none;
     outline:none;
     margin-top:-100px;
     background-color: #ecf0f1;
     padding:40 40 40 40;
-
+    font-size: 30px
+    font-family: 'Abel', sans-serif;
 }
 
 #storyArea{
@@ -73,8 +75,34 @@ h1{
 }
 
 .box3:hover{
-  color : red;
+  color : #e74c3c;
 }
+
+
+.box4{
+  background-color: #ecf0f1 ;
+  flex-grow: 1;
+  border-radius:10px;
+}
+
+.box4:hover{
+  color:black;
+}
+
+
+.submitBox{
+  display: flex;
+  margin-top: -150px;
+  justify-content: flex-end;
+}
+
+#submit{
+  background-color: yellow;
+  flex-grow: 1;
+
+  border: none;
+}
+
 
 .blip{
   animation: blipA 1s infinite;
@@ -100,10 +128,10 @@ h1{
 
 }
 
-#btnX,#btnY,#btnZ,#exit{
+#btnX,#btnY,#btnZ,#exit,#link{
 
-  height:50px;
-  width:50px;
+   height:50px;
+   width:50px;
    border: none;
    color: white;
    padding: 15px 32px;
@@ -129,5 +157,9 @@ h1{
 }
 #exit:hover{
   background:#e74c3c;
+  color : black;
+}
+#link:hover{
+  background:#ecf0f1;
   color : black;
 }

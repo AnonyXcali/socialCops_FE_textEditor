@@ -6,7 +6,7 @@
 
     </head>
     <body onload="designModeOn()">
-
+      <div id="exitEvent">
         <div class="container">
           <div class="row">
             <div class="col s12 m4 titleX"><div class="title"><h1>Text EDITOR <span class="blip">_</span></h1></div></div>
@@ -15,26 +15,38 @@
                 <button class="btn box1" onClick="execCmd('bold')"><center><h2>B</h2></center></button>
                 <button class="btn box2" onClick="execCmd('underline')"><center><h2>U</h2></center></button>
                 <button class="btn box3" onClick="execCmd2('foreColor')"><center><h2>R</h2></center></button>
+                <button class="btn box4" onClick="urlLinkCreator()"><center><i class="fa fa-anchor" aria-hidden="true"></i></center></button>
+
 
             </div>
           </div>
 
           <div class="row">
-              <div class="col s12">
+              <div class="col s12" id="stuff">
                  <div contenteditable="true" name='storyArea' id="storyArea">
               </div>
           </div>
         </div>
 
-        <div id="tooltip">
-           <button id="btnX" >B</button>
-           <button id="btnY" >U</button>
-           <button id="btnZ" >R</button>
-           <button id="exit">x</button>
+        <div class="row">
+          <div class="submitBox">
+            <button id="submit">Submit</button>
+          </div>
         </div>
 
+        <div id="tooltip">
+           <button id="btnX">B</button>
+           <button id="btnY">U</button>
+           <button id="btnZ">R</button>
+           <button id="link"><i class="fa fa-anchor" aria-hidden="true"></i></button>
+           <button id="exit">x</button>
+        </div>
+       </div>
+     </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+        <script src="https://use.fontawesome.com/3c96f750e9.js"></script>
+        <script src="interact.js" type="text/javascript"></script>
         <script src="factory.js" type="text/javascript"></script>
     </body>
 </html>
