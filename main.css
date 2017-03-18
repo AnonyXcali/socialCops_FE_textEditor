@@ -8,7 +8,7 @@ h1{
     white-space: pre-wrap;
 }
 
-textarea{
+iframe{
     resize: none;
     border-style: none;
     border-color: Transparent;
@@ -18,6 +18,11 @@ textarea{
     background-color: #ecf0f1;
     padding:40 40 40 40;
 
+}
+
+#storyArea{
+  height:500px;
+  width:1300px;
 }
 
 .title{
@@ -41,19 +46,51 @@ textarea{
   border-radius: 10px;
 }
 
-.box:hover{
+.box1:hover{
   color:black;
 }
 
 .box2{
   background-color: #ecf0f1 ;
   flex-grow: 1;
+  text-decoration: underline;
 
+}
+.box2:hover{
+  color:black;
 }
 
 .box3{
   background-color: #ecf0f1 ;
   flex-grow: 1;
-
   border-radius:10px;
+}
+
+.box3:hover{
+  color : red;
+}
+
+.blip{
+  animation: blipA 1s infinite;
+}
+
+@keyframes blipA {
+
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+
+}
+
+@media only screen and (max-width: 1244px) {
+    #storyArea {
+        height:500px;
+        width:1000px;
+    }
 }
