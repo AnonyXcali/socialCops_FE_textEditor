@@ -8,7 +8,7 @@ h1{
     white-space: pre-wrap;
 }
 
-iframe{
+#storyArea{
     resize: none;
     border-style: none;
     border-color: Transparent;
@@ -87,10 +87,10 @@ iframe{
   }
 
 }
-@media only screen and (max-width: 1440px) {
+/*@media only screen and (max-width: 1440px) {
     #storyArea {
         height:500px;
-        width:1100px;
+        width:1200px;
     }
 }
 
@@ -100,4 +100,9 @@ iframe{
         height:500px;
         width:1000px;
     }
+}*/
+
+#btnX,#btnY,#btnZ{
+  border-radius : 20px;
+  background: white;
 }
