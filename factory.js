@@ -56,7 +56,8 @@ linkX.addEventListener('click',function(event){
 });
 
 submit.addEventListener('click',function(event){
-console.log(textArea.innerHTML.trim());
+    var text = textArea.innerHTML.trim();
+
 
 });
 // $('body').click(function(){
