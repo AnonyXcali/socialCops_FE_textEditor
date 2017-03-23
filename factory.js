@@ -76,7 +76,7 @@ submit.addEventListener('click',function(event){
 
 $(document).ready(function () {
     $("#tooltip").hide();
-    $('#storyArea').mouseup().mousedown().mouseup().mousedow(function (e) {
+    $('#storyArea').mouseup().mousedown().mouseup().mousedown(function (e) {
         var x = e.clientX;
         var y = e.clientY;
         placeTooltip(x, y);
