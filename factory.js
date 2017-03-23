@@ -57,6 +57,12 @@ linkX.addEventListener('click',function(event){
 
 submit.addEventListener('click',function(event){
     var text = textArea.innerHTML.trim();
+    var res = text.replace(/(<)+(p)+(>)/g, "");
+    var res2 = res.replace(/(<)+[/]+(p)+(>)/g,"");
+    var res3 = res2.replace(/(<div>)/g,"");
+    var res4 = res3.replace(/<[/]div>)/g,"");
+    console.log("Initial text:"+text);
+    console.log("After RegEx and Replace:"+res4);
 
 
 });
@@ -70,7 +76,7 @@ submit.addEventListener('click',function(event){
 
 $(document).ready(function () {
     $("#tooltip").hide();
-    $('#storyArea').mouseup().mousedown().mouseup().mousedown(function (e) {
+    $('#storyArea').mouseup().mousedown().mouseup().mousedow(function (e) {
         var x = e.clientX;
         var y = e.clientY;
         placeTooltip(x, y);
